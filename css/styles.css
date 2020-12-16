@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v16/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMZhKg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/caveat/v9/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9eIWpZA.ttf) format('truetype');
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.wrapper {
+  background-color: #153e90;
+  width: 100%;
+}
+.wrapper header {
+  padding: 15px 8px;
+}
+.wrapper header nav {
+  float: right;
+  font-family: Josefin Sans;
+}
+.wrapper header nav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper header nav ul li {
+  margin: 0 10px;
+  padding: 0 5px;
+}
+.wrapper header nav ul li a {
+  color: #cecece;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: color 0.4s ease-in-out;
+  letter-spacing: 0.8px;
+}
+.wrapper header nav ul li a:hover {
+  color: #9b9b9b;
+}
+.wrapper header nav ul li button {
+  padding: 10px 15px;
+  font-size: 15px;
+  color: #cecece;
+  background-color: transparent;
+  border: 1px solid #cecece;
+  transition: all 0.4s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+.wrapper header nav ul li button:hover {
+  background-color: #ffffff;
+  color: #1b1b1b;
+}
+.wrapper .glass {
+  position: relative;
+  margin: 50px 50px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(40px);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-clip: padding-box;
+  z-index: 999;
+}
+.wrapper .glass .first-content {
+  position: absolute;
+  width: 100px;
+  top: 60px;
+  left: 100px;
+  height: 100px;
+  background-color: #d0ffff;
+  border-radius: 50%;
+  z-index: -99;
+  box-shadow: 2px 2px 70px 25px #d0ffff;
+  animation-name: Moonlight;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+@keyframes Moonlight {
+  0% {
+    top: -500px;
+  }
+  100% {
+    top: 60px;
+  }
+}
+.wrapper .glass .glass-content {
+  padding: 2rem;
+  position: absolute;
+  top: 350px;
+  right: 100px;
+  z-index: -999;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: greenyellow;
+  box-shadow: 2px 2px 10px 20px greenyellow;
+}
+.wrapper .glass .glass-content h3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.wrapper .glass .glass-content p {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  font-size: 30px;
+  font-family: Caveat;
+}
+.wrapper .glass .svg img {
+  max-width: 100%;
+  width: 60%;
+  height: auto;
+  opacity: 0.8;
+}
+.wrapper .footer {
+  text-align: center;
+  font-family: Josefin Sans;
+}
+.wrapper .footer h5 {
+  padding: 25px;
+  font-size: 30px;
+  color: #cecece;
+  letter-spacing: 1px;
+}
